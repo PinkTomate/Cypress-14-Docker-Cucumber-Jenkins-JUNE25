@@ -1,6 +1,19 @@
 # Cypress-14-Docker-Cucumber-Jenkins-JUNE25
 
-En está seccion aprendimos sobre que es Javascript: Syntaxis & Estructura. 
+Section 1:
+
+What is Cypress?
+Cypress is a modern front-end testing framework built for the web. It’s mainly used to automate testing of web applications in the browser — focusing on end-to-end (E2E) testing, but also supports integration and unit tests.
+
+Used for:
+Testing user interactions in a real browser.
+Ensuring UI and UX functionality works as expected.
+Catching bugs before deploying your web app.
+Automating regression testing (so you don’t test manually every time).
+
+Section 2:
+
+Javascript: Syntaxis & Estructura. 
 
 JavaScript es un lenguaje de programación interpretado, ligero y orientado a objetos, usado principalmente para crear páginas web interactivas. Funciona junto con HTML y CSS, y se ejecuta en el navegador del usuario (frontend), aunque también puede usarse del lado del servidor (backend) con entornos como Node.js.
 
@@ -33,10 +46,11 @@ null y undefined
 
 3. Operators
 
+```html
 +  -  *  /   %   // Aritméticos
 ==  ===  !=  !==  <  >  // Comparación
 &&  ||  !          // Lógicos
-
+```
 4. Estructuras de control
 
 /* The if statement executes a block of code if a specified condition is true.
@@ -49,65 +63,19 @@ null y undefined
    }
 */
 
-let age = 10;
 
-if (age >= 18) {
-   console.log("You are an Adult");
-} else {
-   console.log("Minor");
-}
+Section 3:
 
-/* The else if statement allows you to check multiple conditions.
-    The else if statement is used to specify a new condition if the first condition is false.
-    
-    The If-Else If statement:
-    
-    if (condition1) {
-         // code to be executed if condition1 is true
-    } else if (condition2) {
-         // code to be executed if condition2 is true
-    } else {
-         // code to be executed if both conditions are false
-    }
-    */
+Instalation of Cypress in Visual Studio Code. 
 
-    let num = -10;
-    if (num > 0) {
-        console.log("Positive Number");
-    } else if (num < 0) {
-        console.log("Negative Number");
-    } else {
-        console.log("Number is Zero");
-    }
+Section 4: 
 
-    /* The else statement is used to execute a block of code if the condition is false.
+Section 5:
 
-   The If-Else statement:
+>[!NOTE]        
 
-   if (condition) {
-       // code to be executed if condition is true
-   } else {
-       // code to be executed if condition is false
-   }
-   */           
+>[!IMPORTANT] 
 
-    let temperature = 30;   
-    if (temperature > 25) {
-        console.log("It's a hot day");
-    } else {
-        console.log("It's a cool day");
-    }
+>[!WARNING]  
 
-    //Nested If Statements
-
-    let marks = 85; 
-    if (marks >= 90) {
-        console.log("Grade: A");
-    } else if (marks >= 80) {
-        console.log("Grade: B");
-    } else if (marks >= 70) {
-        console.log("Grade: C");
-    } else {
-        console.log("Grade: D");
-    }
-
+>[!CAUTION]  
