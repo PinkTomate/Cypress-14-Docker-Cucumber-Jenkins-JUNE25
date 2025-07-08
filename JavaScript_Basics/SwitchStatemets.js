@@ -20,37 +20,37 @@
 let fruit = "apple";
 
 switch (fruit) {
-    case "banana":
-        console.log("Banana is yellow");
-        break;
-    case "apple":
-        console.log("Apple is red");
-        break;
-    default:
-        console.log("Unknown fruit");
+  case "banana":
+    console.log("Banana is yellow");
+    break;
+  case "apple":
+    console.log("Apple is red");
+    break;
+  default:
+    console.log("Unknown fruit");
 }
 
 let day = "7"; // Example input for day of the week
 // Using switch statement to determine the day of the week
-let dayName;            
+let dayName;
 
 switch (day) {
-    case "1":
-        dayName = "Monday";
-        break;
-    case "2":
-        dayName = "Tuesday";
-        break;
-    case "3":
-        dayName = "Wednesday";
-        break;
-    case "4":
-        dayName = "Thursday";
-        break;
-    case "5":
-        dayName = "Friday";
-        break;
-    default:
-        dayName = "Weekend";
+  case "1":
+    dayName = "Monday";
+    break;
+  case "2":
+    dayName = "Tuesday";
+    break;
+  case "3":
+    dayName = "Wednesday";
+    break;
+  case "4":
+    dayName = "Thursday";
+    break;
+  case "5":
+    dayName = "Friday";
+    break;
+  default:
+    dayName = "Weekend";
 }
 console.log(`The day is: ${dayName}`);
