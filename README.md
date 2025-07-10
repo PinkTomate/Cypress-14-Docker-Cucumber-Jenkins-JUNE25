@@ -64,7 +64,7 @@ Operator that operates on a single operand. This contrasts with binary operators
 
 5. Ternary operator
 
-The conditional (ternary) operator in JavaScript is a concise alternative to an if...else statement, allowing for conditional logic to be expressed in a single line. It is the only JavaScript operator that takes three operands. 
+The conditional (ternary) operator in JavaScript is a concise alternative to an if...else statement, allowing for conditional logic to be expressed in a single line. It is the only JavaScript operator that takes three operands.
 
 ```javascript
 condition ? expressionIfTrue : expressionIfFalse;
@@ -82,7 +82,7 @@ if (condition) {
 ```
 
 if...else Statement.
-Provides an alternative block of code to execute if the initial if condition evaluates to false. 
+Provides an alternative block of code to execute if the initial if condition evaluates to false.
 
 ```javascript
  if (condition) {
@@ -128,7 +128,7 @@ Instalation of Cypress in Visual Studio Code.
 
 Section 4:
 
-How to Use test Runner to execute cypress tests. Ando also select browser for testing. 
+How to Use test Runner to execute cypress tests. Ando also select browser for testing.
 
 To open Cypres in a terminal use command: npx cypress open
 
@@ -138,7 +138,7 @@ Folder structure
 
 Cypress >e2e //All test files are located in this folder
 
-All have js extension which means are jabascript files. 
+All have js extension which means are jabascript files.
 
 Cypress >Fixtures //Folder is used to hold the static data
 
@@ -149,4 +149,47 @@ Cypress >cypress.config//files used to store basic configuration which is needed
 Package.json //used to manage the projects dependencies.
 Package-lock.json //log file that holds the information on the dependencies or packages installed for a node.js
 
+Section 6:
 
+Section 7:
+
+-Locator Stategies: locator are elements of the websites. In Cypress, locators (also called selectors) are used to find and interact with elements on a web page during automated tests.
+
+Locators allow Cypress to:
+
+Find HTML elements (like buttons, inputs, links, etc.)
+Click elements
+Type into inputs
+Check values or text
+
+Assert element visibility or state
+
+Type:
+```javascript
+CSS Selector	cy.get('.btn-primary')	Selects by class, ID, tag, attributes, etc.
+
+ID	cy.get('#login-button')	Selects element with ID login-button
+
+Class	cy.get('.form-control')	Selects elements with class form-control
+
+Attribute	cy.get('[data-cy=submit]')	Custom attributes for better test stability
+
+Text Content	cy.contains('Submit')	Finds element that contains specific text
+
+Parent-Child	cy.get('.form').find('input')	Selects child input inside .form
+```
+
+My first test in cypress
+
+```javascript	
+describe('Login Functionality',function () {
+  it('Login Test using Conduit',function () {
+    cy.visit('https://react-redux.realworld.io/')
+    cy.get('a[href="#login"]').click()
+    cy.get('input[placeholder="Email"]').type('cypressdemo@gmail.com')
+    cy.get('input[placeholder="Password" ]').type('cypressdemo')
+    cy.get('button[type="submit"]').click()
+})
+})
+
+```
